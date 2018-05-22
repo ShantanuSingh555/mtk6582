@@ -13,8 +13,8 @@ ifeq ($(CONFIG_MTK_CM36283),y)
 obj-y	+=  cm36283/
 endif
 
-ifeq ($(CONFIG_MTK_AP3220),y)
-obj-y	+=  ap3220/
+ifeq ($(CONFIG_MTK_AP3216C),y)
+obj-y	+=  ap3216c/
 endif
 
 ifeq ($(CONFIG_MTK_APM_16D),y)

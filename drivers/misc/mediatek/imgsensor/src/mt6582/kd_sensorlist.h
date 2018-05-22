@@ -1,6 +1,7 @@
 //s_add new sensor driver here
 //export funtions
 UINT32 IMX219_MIPI_RAW_SensorInit(PSENSOR_FUNCTION_STRUCT *pfFunc);
+UINT32 S5K4H5YX_MIPI_RAW_SensorInit(PSENSOR_FUNCTION_STRUCT *pfFunc);
 UINT32 HI544_MIPI_RAW_SensorInit(PSENSOR_FUNCTION_STRUCT *pfFunc);
 UINT32 HI191MIPI_RAW_SensorInit(PSENSOR_FUNCTION_STRUCT *pfFunc);
 UINT32 HI707_YUV_SensorInit(PSENSOR_FUNCTION_STRUCT *pfFunc);
@@ -455,6 +456,10 @@ ACDK_KD_SENSOR_INIT_FUNCTION_STRUCT kdSensorList[MAX_NUM_OF_SUPPORT_SENSOR+1] =
 
 #if defined(OV5670_MIPI_RAW)
     {OV5670_SENSOR_ID, SENSOR_DRVNAME_OV5670_MIPI_RAW, OV5670_MIPI_RAW_SensorInit}, 
+#endif
+
+#if defined(S5K4H5YX_MIPI_RAW)                                     {S5K4H5YX_SENSOR_ID, SENSOR_DRVNAME_S5K4H5YX_MIPI_RAW, S5K4
+H5YX_MIPI_RAW_SensorInit},
 #endif
 /*  ADD sensor driver before this line */
     {0,{0},NULL}, //end of list

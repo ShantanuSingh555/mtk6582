@@ -295,11 +295,13 @@
 #define HI258_SENSOR_ID                         0x00d1
 #define HI259_SENSOR_ID                         0x00d2
 #define OV5670_SENSOR_ID                         0x5670
+#define S5K4H5YX_SENSOR_ID     0x485b
 //end by zhangdongfang
 /* CAMERA DRIVER NAME */
 #define CAMERA_HW_DEVNAME            "kd_camera_hw"
 
 /* SENSOR DEVICE DRIVER NAME */
+#define SENSOR_DRVNAME_S5K4H5YX_MIPI_RAW      "s5k4h5yxmipiraw"
 #define SENSOR_DRVNAME_IMX179_MIPI_RAW   "imx179mipiraw"
 #define SENSOR_DRVNAME_IMX178_MIPI_RAW   "imx178mipiraw"
 #define SENSOR_DRVNAME_OV2722_MIPI_RAW  "ov2722mipiraw"
